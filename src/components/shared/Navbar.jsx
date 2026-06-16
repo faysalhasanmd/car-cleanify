@@ -17,7 +17,7 @@ const Navbar = () => {
 
   const isActive = (href) => {
     if (href === "/") return pathname === "/";
-    return pathname.startsWith(href);
+    return pathname?.startsWith(href);
   };
 
   return (
